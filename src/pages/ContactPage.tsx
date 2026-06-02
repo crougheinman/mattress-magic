@@ -342,7 +342,7 @@ const Contact = () => {
                                         <button
                                             type='submit'
                                             disabled={loading}
-                                            className='w-full rounded-md bg-copa-blue-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto'
+                                            className='w-full rounded-md bg-copa-blue-700 px-3.5 py-2.5 text-center text-sm font-semibold text-[#0b001a] shadow-sm transition-colors hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto'
                                         >
                                             {loading ? 'Sending...' : 'Send message'}
                                         </button>

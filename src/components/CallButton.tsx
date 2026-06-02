@@ -4,7 +4,7 @@ const CallButton = ({ phone = STORE_INFO.phone }: { phone?: string }) => {
     return (
         <a
             href={`tel:${phone}`}
-            className="fixed bottom-6 right-6 z-50 inline-flex items-center rounded-full bg-copa-blue-700 px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-copa-blue-500/20 transition hover:bg-copa-blue-800 focus:outline-none focus:ring-2 focus:ring-copa-blue-500 focus:ring-offset-2 lg:hidden"
+            className="fixed bottom-6 right-6 z-50 inline-flex items-center rounded-full bg-copa-blue-700 px-5 py-3 text-sm font-semibold text-[#0b001a] shadow-xl shadow-copa-blue-500/20 transition hover:bg-copa-blue-800 focus:outline-none focus:ring-2 focus:ring-copa-blue-500 focus:ring-offset-2 lg:hidden"
         >
             <svg
                 className="mr-2 h-4 w-4"

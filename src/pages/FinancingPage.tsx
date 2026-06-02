@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Layout from '../Layout';
-import financingHeader from '../assets/mattressmagic-financing-header.svg';
+import financingHeader from '../assets/mattressmagic-financing-header.jpg';
 
 const benefits = [
     { icon: 'mdi:percent-outline', label: '0% Interest', detail: 'On qualifying plans' },
@@ -33,19 +33,19 @@ const FinancingPage: React.FC = () => {
     return (
         <Layout title="Financing">
             {/* Hero */}
-            <section className="relative overflow-hidden bg-copa-blue-900">
+            <section className="relative overflow-hidden bg-copa-gold-900">
                 <img src={financingHeader} alt="" className="absolute inset-0 h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-copa-blue-950/40" />
-                <div className="absolute inset-0 bg-linear-to-t from-copa-blue-950/80 via-copa-blue-900/30 to-transparent" />
+                <div className="absolute inset-0 bg-copa-gold-950/50" />
+                <div className="absolute inset-0 bg-linear-to-t from-copa-gold-950/80 via-copa-gold-900/40 to-transparent" />
                 <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:py-24">
-                    <span className="inline-flex items-center gap-2 rounded-full bg-copa-blue-950/70 px-4 py-1.5 text-sm font-semibold text-white shadow-lg ring-1 ring-white/20 backdrop-blur-sm">
+                    <span className="inline-flex items-center gap-2 rounded-full bg-copa-gold-950/70 px-4 py-1.5 text-sm font-semibold text-[#ffffff] shadow-lg ring-1 ring-copa-gold-500/30 backdrop-blur-sm">
                         <Icon icon="mdi:hand-coin-outline" className="h-4 w-4" />
                         Buy now, pay over time
                     </span>
-                    <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white drop-shadow-lg sm:text-5xl">
+                    <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-[#ffffff] drop-shadow-lg sm:text-5xl">
                         Flexible Financing
                     </h1>
-                    <p className="mx-auto mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white [text-shadow:_0_2px_8px_rgb(0_0_0_/_70%)]">
+                    <p className="mx-auto mt-4 max-w-2xl text-lg font-medium leading-relaxed text-[#ece6f6] [text-shadow:_0_2px_8px_rgb(0_0_0_/_70%)]">
                         Everyone deserves a good night’s sleep without breaking the bank. We’ve partnered with trusted lenders to make your dream mattress or furniture a reality.
                     </p>
                 </div>
@@ -89,7 +89,7 @@ const FinancingPage: React.FC = () => {
                             key={option.title}
                             className="group flex flex-col rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-shadow hover:shadow-xl hover:shadow-copa-blue-900/10"
                         >
-                            <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-copa-blue-600 text-white transition-transform group-hover:scale-105">
+                            <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-copa-blue-600 text-[#0b001a] transition-transform group-hover:scale-105">
                                 <Icon icon={option.icon} className="h-7 w-7" />
                             </span>
                             <h3 className="mt-5 text-xl font-bold text-gray-900">{option.title}</h3>
@@ -99,7 +99,7 @@ const FinancingPage: React.FC = () => {
                                     href={option.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-copa-blue-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-copa-blue-700"
+                                    className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-copa-blue-600 px-6 py-3 text-sm font-semibold text-[#0b001a] transition-colors hover:bg-copa-blue-700"
                                 >
                                     {option.cta}
                                     <Icon icon="mdi:open-in-new" className="h-4 w-4" />
@@ -120,25 +120,25 @@ const FinancingPage: React.FC = () => {
 
             {/* Closing CTA */}
             <section className="mx-auto max-w-5xl px-4 pb-20">
-                <div className="overflow-hidden rounded-3xl bg-linear-to-br from-copa-blue-700 to-copa-blue-900 px-6 py-12 text-center sm:px-12">
-                    <Icon icon="mdi:bed-king-outline" className="mx-auto h-10 w-10 text-copa-gold-400" />
-                    <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
+                <div className="overflow-hidden rounded-3xl bg-linear-to-br from-copa-gold-800 to-copa-gold-950 px-6 py-12 text-center sm:px-12">
+                    <Icon icon="mdi:bed-king-outline" className="mx-auto h-10 w-10 text-copa-blue-400" />
+                    <h2 className="mt-4 text-2xl font-bold text-[#ffffff] sm:text-3xl">
                         Start Your Journey to Better Sleep Today
                     </h2>
-                    <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-copa-blue-100">
+                    <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-copa-gold-100">
                         Visit our showroom to explore our collection and discuss financing in person, or conveniently apply online for pre-approval on the plan that best suits your needs.
                     </p>
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                         <Link
                             to="/shop"
-                            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-semibold text-copa-gold-700 transition-colors hover:bg-copa-gold-50 sm:w-auto"
+                            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-copa-blue-500 px-7 py-3 text-sm font-semibold text-[#0b001a] transition-colors hover:bg-copa-blue-400 sm:w-auto"
                         >
                             <Icon icon="mdi:shopping-outline" className="h-4 w-4" />
                             Shop Mattresses
                         </Link>
                         <Link
                             to="/contact"
-                            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-copa-blue-700 px-7 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800 sm:w-auto"
+                            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-copa-blue-700 px-7 py-3 text-sm font-semibold text-[#0b001a] shadow-sm transition-colors hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800 sm:w-auto"
                         >
                             <Icon icon="mdi:phone-outline" className="h-4 w-4" />
                             Contact Us

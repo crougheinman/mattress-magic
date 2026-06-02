@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SITE_NAME, HEADER_NAV_LINKS, HEADER_CTA_BUTTON, STORE_INFO } from '../constants';
-import logo from '../assets/mattressmagic-logo.svg';
+import logo from '../assets/mattressmagic-logo.png';
 import { useState } from 'react';
 
 const HeaderNav = () => {
@@ -16,7 +16,7 @@ const HeaderNav = () => {
                     <Link to='/' className='-m-1.5 p-1.5'>
                         <span className='sr-only'>{SITE_NAME}</span>
                         <img
-                            className='h-8 w-auto'
+                            className='h-12 w-auto object-contain'
                             src={logo}
                             alt={`${SITE_NAME} Logo`}
                         />
@@ -36,7 +36,7 @@ const HeaderNav = () => {
                 <div className='flex flex-1 items-center justify-end gap-x-6'>
                     <Link
                         to={HEADER_CTA_BUTTON.url}
-                        className='hidden lg:inline-flex rounded-md bg-copa-blue-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800'
+                        className='hidden lg:inline-flex rounded-md bg-copa-blue-700 px-3 py-2 text-sm font-semibold text-[#0b001a] shadow-sm hover:bg-copa-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copa-blue-800'
                     >
                         {HEADER_CTA_BUTTON.name}
                     </Link>
@@ -93,7 +93,7 @@ const HeaderNav = () => {
             {mobileMenuOpen && (
                 <div className='lg:hidden fixed inset-0 z-50 bg-white p-6'>
                     <div className='flex items-center justify-between'>
-                        <img className='h-8 w-auto' src={logo} alt='Logo' />
+                        <img className='h-12 w-auto object-contain' src={logo} alt='Logo' />
                         <button
                             type='button'
                             onClick={() => setMobileMenuOpen(false)}

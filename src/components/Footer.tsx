@@ -3,7 +3,7 @@ import { FOOTER_LINKS, SOCIALS, SITE_NAME } from '../constants';
 import type { FooterLink, FooterSection } from '../types';
 import { useEffect, useState } from 'react';
 import apiClient from '../apiClient';
-import logo from '../assets/mattressmagic-logo.svg';
+import logo from '../assets/mattressmagic-logo.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -29,13 +29,13 @@ const Footer = () => {
         if (isFooterSection(item)) {
             return (
                 <div key={item.label} className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6 text-gray-900">{item.label}</h3>
+                    <h3 className="text-sm font-semibold leading-6 text-white">{item.label}</h3>
                     <ul className="mt-6 space-y-4">
                         {item.links.map((subItem, index) => {
                             if (isFooterSection(subItem)) {
                                 return (
                                     <li key={`${subItem.label}-${index}`}>
-                                        <span className="text-sm font-semibold leading-6 text-gray-900">{subItem.label}</span>
+                                        <span className="text-sm font-semibold leading-6 text-white">{subItem.label}</span>
                                         <ul className="mt-2 space-y-2">
                                             {subItem.links.map((nestedItem) => renderFooterItem(nestedItem))}
                                         </ul>
@@ -51,11 +51,11 @@ const Footer = () => {
         return (
             <li key={item.label}>
                 {item.href.startsWith('http') || item.href.startsWith('mailto') || item.href.startsWith('tel') ? (
-                    <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                    <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                         {item.label}
                     </a>
                 ) : (
-                    <Link to={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                    <Link to={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                         {item.label}
                     </Link>
                 )}
@@ -77,13 +77,13 @@ const Footer = () => {
     });
 
     return (
-        <footer className="bg-olive-300" aria-labelledby="footer-heading">
+        <footer className="bg-[#0b001a]" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">Footer</h2>
             <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8">
                         <img className="h-12 w-auto" src={logo} alt={SITE_NAME} />
-                        <p className="text-sm leading-6 text-gray-600">
+                        <p className="text-sm leading-6 text-gray-300">
                             The Magic&rsquo;s in the Deal and how Grrreat! you&rsquo;ll Feel.
                         </p>
                         <div className="flex space-x-6">
@@ -91,7 +91,7 @@ const Footer = () => {
                                 <a
                                     key={social.type}
                                     href={social.url}
-                                    className="text-gray-400 hover:text-gray-500"
+                                    className="text-gray-400 hover:text-white"
                                     dangerouslySetInnerHTML={{ __html: social.icon }}
                                 >
                                 </a>
@@ -106,8 +106,8 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
-                <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-                    <p className="text-xs leading-5 text-gray-500">
+                <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                    <p className="text-xs leading-5 text-gray-400">
                         &copy; {currentYear} - Built by <a
                             href="https://gdyportfolio.vercel.app/"
                             className="underline">Greg</a> - All rights reserved.

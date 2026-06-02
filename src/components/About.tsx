@@ -1,5 +1,5 @@
 import { SITE_NAME } from '../constants';
-import aboutPhoto from '../assets/mattressmagic-about.svg';
+import aboutPhoto from '../assets/mattressmagic-about.jpg';
 
 const About = () => {
     return (
@@ -17,39 +17,23 @@ const About = () => {
                 <div className='px-6 lg:contents'>
                     <div className='mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2'>
                         <p className='text-base font-semibold leading-7 text-copa-gold-600'>
-                            Family-owned since 2010
+                            More than just a mattress store
                         </p>
                         <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-                            An Inside Look Into Mattress Magic
+                            Welcome to Mattress Magic AZ – Where Comfort Meets Value.
                         </h1>
                         <p className='mt-6 text-xl leading-8 text-gray-700'>
-                            Welcome to <strong>{SITE_NAME}</strong>, a family-owned mattress and
-                            furniture store proudly serving Phoenix and Tempe since 2010. We started
-                            with a simple belief: quality sleep makes life better &mdash; and everyone
-                            deserves it without paying big-box prices.
+                            Family-owned and proudly serving Phoenix and Tempe since 2010, Mattress Magic AZ was founded on a simple belief: better health starts with better sleep. We know that few things are more important than a good night’s rest, and we’re committed to helping our customers find exactly what they need to sleep well and save big.
                         </p>
                         <div className='mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none'>
                             <p>
-                                That&rsquo;s the magic behind our name: we bring you high-quality
-                                mattresses and furniture at a fraction of the price you&rsquo;d find
-                                at the big chains, backed by friendly, personalized service from
-                                people who know sleep.
+                                At Mattress Magic AZ, “The Magic is in the deal and how great you’re gonna feel.” That’s not just a slogan — it’s our promise. We work closely with suppliers to bring high-quality mattresses and furniture at a fraction of the price you’d find at big-box retailers. Whether you're shopping for a new mattress, furniture, or bedding accessories, you'll always find unbeatable deals and genuine customer care.
                             </p>
                             <p className='mt-8'>
-                                Our showroom features an extensive selection from trusted brands
-                                like Beautyrest, Serta, Puffy, Ashley, and BIA Eclipse Glacier
-                                &mdash; plus stylish, name-brand furniture to complete every room in
-                                your home.
+                                We specialize in comfort, value, and personalized service. Our team is here to guide you through every step of the process — helping you discover the perfect level of support and style that suits your lifestyle and budget. With well-known, reputable brands and a dedication to quality, we make sure you leave with more than just a mattress — you leave with peace of mind.
                             </p>
                             <p className='mt-8'>
-                                From our 2 Year Comfort Guarantee to convenient financing and white
-                                glove delivery, we make upgrading your sleep easy and affordable.
-                                The Magic&rsquo;s in the Deal and how Grrreat! you&rsquo;ll Feel.
-                            </p>
-                            <p className='mt-8'>
-                                Experience the difference of shopping local. Whether you visit us
-                                in-store or browse our online showroom, we promise quality you can
-                                feel and prices you&rsquo;ll love.
+                                Thank you for making us your trusted local source for better sleep. We look forward to serving you for many more years to come.
                             </p>
                         </div>
                     </div>

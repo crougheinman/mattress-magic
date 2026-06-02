@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-label="Financing header placeholder">
+  <defs>
+    <linearGradient id="gf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26282e"/>
+      <stop offset="1" stop-color="#15161a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#gf)"/>
+  <text x="800" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle">Financing</text>
+  <text x="800" y="310" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#c8a24a" text-anchor="middle">Image placeholder &#8212; replace at src/assets/mattressmagic-financing-header.svg</text>
+</svg>

@@ -1,0 +1,83 @@
+import { useEffect, useState } from 'react';
+import apiClient from '../apiClient';
+import ShopPageFilters from '../components/ShopPageFilters';
+import Layout from '../Layout';
+import type { Product } from '../types';
+import { BRAND_ID_TO_NAME } from '../constants';
+
+const ShopPage = () => {
+    const [products, setProducts] = useState<Product[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await apiClient.get('/products?category=Mattress');
+                const apiProducts = response.data?.data?.products ?? [];
+
+                const normalizedProducts: Product[] = apiProducts.map((product: any) => ({
+                    name: product.name ?? '',
+                    slug: product.slug ?? '',
+                    brand: (() => {
+                        const rawBrand = product.brand ?? product.brand_id ?? 'Unknown';
+                        const rawBrandString = String(rawBrand);
+                        const matchedId = Number(rawBrandString);
+
+                        if (product.brand_name) {
+                            return String(product.brand_name);
+                        }
+
+                        if (!Number.isNaN(matchedId) && String(matchedId) === rawBrandString) {
+                            return BRAND_ID_TO_NAME[matchedId] ?? rawBrandString;
+                        }
+
+                        return rawBrandString;
+                    })(),
+                    price: product.price_from ?? product.price ?? '',
+                    description: product.description ?? '',
+                    thumbnail_path: product.thumbnail_path ?? '',
+                    images: Array.isArray(product.gallery_images) && product.gallery_images.length
+                        ? product.gallery_images
+                        : [product.brand_logo ? `/brand-logos/${product.brand_logo}` : 'https://via.placeholder.com/600x400?text=No+Image'],
+                    comfortLevel: product.comfort_level ?? product.comfortLevel ?? '',
+                    color: product.color ?? '',
+                    size: product.size ?? '',
+                    originalPrice: product.original_price ?? product.originalPrice,
+                    sizes: Array.isArray(product.sizes)
+                        ? product.sizes.map((s: any) => ({
+                            size: s.size,
+                            price: Number(s.price),
+                            originalPrice: s.original_price != null ? Number(s.original_price) : undefined,
+                        }))
+                        : [],
+                    priceLabel: product.price_label ?? undefined,
+                    priceFrom: product.price_from != null ? Number(product.price_from) : undefined,
+                    priceTo: product.price_to != null ? Number(product.price_to) : undefined,
+                }));
+
+                setProducts(normalizedProducts);
+            } catch (err) {
+                setError('Unable to load products at this time. Please try again later.');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    return (
+        <Layout title="Shop Mattress">
+            <div className='bg-white'>
+                {error ? (
+                    <div className='p-16 text-center text-red-600'>{error}</div>
+                ) : (
+                    <ShopPageFilters products={products} loading={loading} />
+                )}
+            </div>
+        </Layout>
+    );
+};
+
+export default ShopPage;

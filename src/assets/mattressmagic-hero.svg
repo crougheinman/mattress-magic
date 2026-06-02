@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Hero image placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26282e"/>
+      <stop offset="1" stop-color="#15161a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g fill="#c8a24a" opacity="0.18">
+    <circle cx="1250" cy="220" r="320"/>
+    <circle cx="300" cy="760" r="240"/>
+  </g>
+  <text x="800" y="430" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle">Mattress Magic</text>
+  <text x="800" y="500" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#c8a24a" text-anchor="middle">Hero image placeholder &#8212; replace at src/assets/mattressmagic-hero.svg</text>
+</svg>

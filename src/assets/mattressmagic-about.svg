@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="About photo placeholder">
+  <rect width="800" height="600" fill="#e9e5dc"/>
+  <rect x="40" y="40" width="720" height="520" rx="10" fill="none" stroke="#c8a24a" stroke-width="3" stroke-dasharray="12 10"/>
+  <circle cx="400" cy="250" r="70" fill="#c8a24a" opacity="0.35"/>
+  <path d="M300 380c0-55 45-100 100-100s100 45 100 100" fill="#c8a24a" opacity="0.35"/>
+  <text x="400" y="470" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#6b6356" text-anchor="middle">Team / store photo placeholder</text>
+  <text x="400" y="505" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#9a9488" text-anchor="middle">replace at src/assets/mattressmagic-about.svg</text>
+</svg>

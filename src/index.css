@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/*
+ * Copa brand theme — charcoal + gold (distinct from Mattress2Go's blue).
+ * The primary ramp keeps the `copa-blue` name so existing utility classes
+ * re-skin automatically; it now resolves to a neutral charcoal scale.
+ * `copa-gold` is the accent used for eyebrows, links and highlights.
+ */
+@theme {
+  --color-copa-blue-50: #f6f6f7;
+  --color-copa-blue-100: #e8e9eb;
+  --color-copa-blue-200: #d1d2d6;
+  --color-copa-blue-300: #adafb6;
+  --color-copa-blue-400: #82858d;
+  --color-copa-blue-500: #5d606a;
+  --color-copa-blue-600: #3c3e46;
+  --color-copa-blue-700: #2b2d34;
+  --color-copa-blue-800: #1f2025;
+  --color-copa-blue-900: #15161a;
+  --color-copa-blue-950: #0b0c0e;
+
+  --color-copa-gold-50: #fbf6ea;
+  --color-copa-gold-100: #f5e9c8;
+  --color-copa-gold-200: #ecd391;
+  --color-copa-gold-300: #e0bb59;
+  --color-copa-gold-400: #d4a738;
+  --color-copa-gold-500: #c08f2b;
+  --color-copa-gold-600: #9c6f22;
+  --color-copa-gold-700: #7c581e;
+  --color-copa-gold-800: #66481d;
+  --color-copa-gold-900: #563d1b;
+  --color-copa-gold-950: #321f0c;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Editorial serif display headings set Copa apart typographically. */
+h1, h2 {
+  font-family: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+@layer components {
+  .product-description-content {
+    color: #374151;
+  }
+
+  .product-description-content ul,
+  .product-description-content ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .product-description-content ul {
+    list-style-type: disc;
+  }
+
+  .product-description-content ol {
+    list-style-type: decimal;
+  }
+
+  .product-description-content li {
+    margin-top: 0.35rem;
+    line-height: 1.75;
+  }
+
+  .product-description-content ul ul,
+  .product-description-content ol ol {
+    margin-top: 0.5rem;
+  }
+}

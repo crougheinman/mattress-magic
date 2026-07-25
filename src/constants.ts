@@ -13,7 +13,7 @@ import type {
 export const DESCRIPTION: string =
   "Quality Mattresses & Furniture at Unbeatable Prices in Phoenix & Tempe, AZ";
 
-export const SITE_NAME: string = "Mattress Magic AZ";
+export const SITE_NAME: string = "Mattress Magic";
 
 export const HEADER_NAV_LINKS: HeaderNavLinksType[] = [
   {

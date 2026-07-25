@@ -75,7 +75,7 @@ const FinancingPage: React.FC = () => {
             {/* Intro */}
             <Reveal><section className="mx-auto max-w-3xl px-4 pt-16 text-center">
                 <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-                    Flexible Financing at Mattress Magic AZ
+                    Flexible Financing at Mattress Magic
                 </h2>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
                     Our flexible financing plans are designed to accommodate various budgets and preferences, ensuring you can enjoy your new purchase without financial stress.

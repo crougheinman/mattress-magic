@@ -20,14 +20,14 @@ const About = () => {
                             More than just a mattress store
                         </p>
                         <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-                            Welcome to Mattress Magic AZ – Where Comfort Meets Value.
+                            Welcome to Mattress Magic – Where Comfort Meets Value.
                         </h1>
                         <p className='mt-6 text-xl leading-8 text-gray-700'>
-                            Family-owned and proudly serving Phoenix and Tempe since 2010, Mattress Magic AZ was founded on a simple belief: better health starts with better sleep. We know that few things are more important than a good night’s rest, and we’re committed to helping our customers find exactly what they need to sleep well and save big.
+                            Family-owned and proudly serving Phoenix and Tempe since 2010, Mattress Magic was founded on a simple belief: better health starts with better sleep. We know that few things are more important than a good night’s rest, and we’re committed to helping our customers find exactly what they need to sleep well and save big.
                         </p>
                         <div className='mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none'>
                             <p>
-                                At Mattress Magic AZ, “The Magic is in the deal and how great you’re gonna feel.” That’s not just a slogan — it’s our promise. We work closely with suppliers to bring high-quality mattresses and furniture at a fraction of the price you’d find at big-box retailers. Whether you're shopping for a new mattress, furniture, or bedding accessories, you'll always find unbeatable deals and genuine customer care.
+                                At Mattress Magic, “The Magic is in the deal and how great you’re gonna feel.” That’s not just a slogan — it’s our promise. We work closely with suppliers to bring high-quality mattresses and furniture at a fraction of the price you’d find at big-box retailers. Whether you're shopping for a new mattress, furniture, or bedding accessories, you'll always find unbeatable deals and genuine customer care.
                             </p>
                             <p className='mt-8'>
                                 We specialize in comfort, value, and personalized service. Our team is here to guide you through every step of the process — helping you discover the perfect level of support and style that suits your lifestyle and budget. With well-known, reputable brands and a dedication to quality, we make sure you leave with more than just a mattress — you leave with peace of mind.
